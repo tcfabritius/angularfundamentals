@@ -1,0 +1,3 @@
+<button (click)="setActive()" [ngStyle]="{'background-color': isActive ? 'blue' : 'red', 'color': 'white'}">Button</button>
+<p [hidden]="!isActive"> {{ teksti }}</p>
+<input [hidden]="!isActive" id="text" [(ngModel)]="teksti" />
