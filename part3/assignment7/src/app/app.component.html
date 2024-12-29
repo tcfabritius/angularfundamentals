@@ -1,0 +1,6 @@
+<form (ngSubmit)="buttonPressed(stringInput.value)">
+  <input id="string" #stringInput />
+  <button type="submit">Click</button>
+</form>
+<p *ngIf="pressed">{{stringi | pipe1 }}</p>
+<p *ngIf="pressed">{{stringi | pipe2 }}</p>
