@@ -1,0 +1,9 @@
+<button (click)="setPage('home')">Home</button>
+<button (click)="setPage('hello')">Hello</button>
+<button (click)="setPage('age')">Age</button>
+<div *ngSwitch="page">
+  <p *ngSwitchCase="'home'">Welcome to oursite</p>
+  <p *ngSwitchCase="'hello'">Hello</p>
+  <p *ngSwitchCase="'age'">I am 29 yo</p>
+  <p *ngSwitchDefault>Error</p>
+</div>
