@@ -1,0 +1,12 @@
+<div class="card" style="width: 36rem;" *ngIf="weather">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ weather.name }} ({{ weather.sys.country }})</h5>
+      <p class="card-text">Weather today.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Temperature: {{ weather.main.temp }}°C</li>
+      <li class="list-group-item">Weather: {{ weather.weather[0].description }}</li>
+      <li class="list-group-item">Humidity: {{ weather.main.humidity }}%</li>
+    </ul>
+  </div>

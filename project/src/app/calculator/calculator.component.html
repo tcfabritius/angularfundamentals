@@ -1,0 +1,15 @@
+<form >
+    <div class="form-group">
+      <label for="formGroupExampleInput">Number 1</label>
+      <input type="number" class="form-control" id="formGroupNumber1" name="Number1" [(ngModel)]="number1" placeholder="Number 1">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Another label</label>
+      <input type="number" class="form-control" id="formGroupNumber2" name="Number2" [(ngModel)]="number2" placeholder="Number 2">
+    </div>
+  </form>
+
+  <p> Sum: {{sum(number1,number2)}}</p>
+  <p> Difference: {{difference(number1,number2)}}</p>
+  <p> Division: {{division(number1,number2)}}</p>
+  <p> Product: {{product(number1,number2)}}</p>

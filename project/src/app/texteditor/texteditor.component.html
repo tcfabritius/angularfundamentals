@@ -1,0 +1,21 @@
+<div class="mt-3">
+    <button type="button" class="btn btn-info" (click)="save(text)">Save</button>
+    <button type="button" class="btn btn-primary" (click)="original()">Original</button>
+    <button type="button" class="btn btn-success" (click)="reverse()">Reverse</button>
+    <button type="button" class="btn btn-warning" (click)="capitalize()">Capitalize</button>
+  
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+  
+        <!-- One-way binding with input event to update the model -->
+        <textarea *ngIf="mode === 'default'" class="form-control" id="exampleFormControlTextarea1"
+          [value]="text" (input)="onInputChange($event)" rows="9"></textarea>
+  
+        <!-- Read-only textarea for transformed text (reverse/capitalize) -->
+        <textarea *ngIf="mode !== 'default'" class="form-control" id="exampleFormControlTextarea1"
+          [value]="text" rows="9" readonly></textarea>
+      </div>
+    </form>
+  </div>
+  
