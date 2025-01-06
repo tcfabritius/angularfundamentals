@@ -4,7 +4,6 @@ type ArrayValues = {
 }
 
 function calcArray(arr: number[]): ArrayValues {
-    //Calculate the sum & count here
 
     let sum: number = 0;
     let count: number = 0;
